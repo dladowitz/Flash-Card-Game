@@ -64,6 +64,10 @@ describe '#guess' do
  it "should tests a guess against the term of the 3rd card" do
    @deck.guess('nothing').should match /(Wrong!)/
  end
+
+ it "should tests a guess against the term of the 3rd card" do
+   @deck.guess('begin').should match /(Correct!)/
+ end
 end
 
 
