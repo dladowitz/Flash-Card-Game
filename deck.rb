@@ -34,7 +34,7 @@ class Deck
       puts ""
       self.set_current_card
       @guess_counter = 1
-      return 'Correct!'
+      # return 'Correct!'
 
     elsif @guess_counter < 3
       # puts "This is inside the elsif block: #{input}"
@@ -42,12 +42,13 @@ class Deck
       puts ""
       @guess_counter += 1
       #self.guess#('and')
+
+
     elsif @guess_counter < 4
       puts "Wrong! The correct answer is: #{@current_card.show_term}"
       puts ""
       self.set_current_card
       @guess_counter = 1
-      return 'Wrong!'
 
 
     end

@@ -54,19 +54,27 @@ describe '#guess' do
  end
 
  it "should test a guess against the term of the 1st card" do
-   @deck.guess('alias').should match /(Correct!)/
+  STDOUT.should_receive(:puts).with("Correct!")
+  STDOUT.should_receive(:puts).with("")
+  @deck.guess('alias')
  end
 
  it "should test a guess against the term of the 2nd card" do
-   @deck.guess('and').should match /(Correct!)/
+   STDOUT.should_receive(:puts).with("Correct!")
+   STDOUT.should_receive(:puts).with("")
+   @deck.guess('and')
  end
 
  it "should test a guess against the term of the 3rd card" do
-   @deck.guess('nothing').should match /(Wrong!)/
+   STDOUT.should_receive(:puts).with("Wrong! Try again!")
+   STDOUT.should_receive(:puts).with("")
+   @deck.guess('nothing')
  end
 
  it "should tests a guess against the term of the 3rd card" do
-   @deck.guess('BEGIN').should match /(Correct!)/
+   STDOUT.should_receive(:puts).with("Correct!")
+    STDOUT.should_receive(:puts).with("")
+    @deck.guess('BEGIN')
  end
 end
 
