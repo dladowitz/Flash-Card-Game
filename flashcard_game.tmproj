@@ -3,46 +3,78 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>deck.rb</string>
+	<string>Flashcard.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
+			<string>card.rb</string>
+			<key>lastUsed</key>
+			<date>2012-07-01T00:35:50Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>card_spec.rb</string>
 			<key>lastUsed</key>
-			<date>2012-06-30T00:33:30Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>dictionary.txt</string>
-			<key>lastUsed</key>
-			<date>2012-06-30T00:33:31Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>deck_spec.rb</string>
-			<key>lastUsed</key>
-			<date>2012-06-30T01:16:56Z</date>
+			<date>2012-07-01T00:35:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>deck.rb</string>
 			<key>lastUsed</key>
-			<date>2012-06-30T01:18:08Z</date>
+			<date>2012-07-01T01:23:54Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>deck_spec.rb</string>
+			<key>lastUsed</key>
+			<date>2012-07-01T01:26:32Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>session.rb</string>
+			<key>lastUsed</key>
+			<date>2012-07-01T01:10:02Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>session_spec.rb</string>
+			<key>lastUsed</key>
+			<date>2012-07-01T00:23:44Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Flashcard.rb</string>
+			<key>lastUsed</key>
+			<date>2012-07-01T01:26:32Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>card.rb</string>
+			<string>dictionary.txt</string>
 			<key>lastUsed</key>
-			<date>2012-06-30T01:16:11Z</date>
+			<date>2012-06-30T21:05:22Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>165</integer>
 	<key>metaData</key>
 	<dict>
+		<key>Flashcard.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>24</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>card.rb</key>
 		<dict>
 			<key>caret</key>
@@ -78,56 +110,150 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
+				<integer>29</integer>
 				<key>line</key>
-				<integer>32</integer>
+				<integer>30</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>9</integer>
+				<key>line</key>
+				<integer>30</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>29</integer>
+				<key>line</key>
+				<integer>30</integer>
+			</dict>
 		</dict>
 		<key>deck.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
 				<integer>25</integer>
+				<key>line</key>
+				<integer>28</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>2</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>28</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>25</integer>
+				<key>line</key>
+				<integer>28</integer>
+			</dict>
 		</dict>
 		<key>deck_spec.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>65</integer>
+				<integer>1</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>34</integer>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>19</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
 		</dict>
 		<key>dictionary.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>34</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>12</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>12</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>12</integer>
+			</dict>
+		</dict>
+		<key>session.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>29</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>19</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>29</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -136,11 +262,13 @@
 		<string>card.rb</string>
 		<string>deck_spec.rb</string>
 		<string>deck.rb</string>
+		<string>session.rb</string>
+		<string>Flashcard.rb</string>
 		<string>dictionary.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{203, 29}, {1017, 1029}}</string>
+	<string>{{1017, 20}, {774, 1029}}</string>
 </dict>
 </plist>
