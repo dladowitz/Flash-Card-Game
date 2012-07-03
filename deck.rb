@@ -23,30 +23,24 @@ class Deck
   end
 
   def guess(input)
-
-    # puts "Definition: #{@current_card.show_def}"
-    #     print "What is the matching Term? "
-    #     input = gets.chomp
-    #     puts "This is before the if block: #{input}"
-
-    if @current_card.show_term == input
+    if @current_card.term == input
       puts "Correct!"
-      puts ""
+      puts
       self.set_current_card
       @guess_counter = 1
       # return 'Correct!'
 
     elsif @guess_counter < 3
-      # puts "This is inside the elsif block: #{input}"
+
       puts "Wrong! Try again!"
-      puts ""
+      puts
       @guess_counter += 1
-      #self.guess#('and')
+
 
 
     elsif @guess_counter < 4
-      puts "Wrong! The correct answer is: #{@current_card.show_term}"
-      puts ""
+      puts "Wrong! The correct answer is: #{@current_card.term}"
+      puts
       self.set_current_card
       @guess_counter = 1
 

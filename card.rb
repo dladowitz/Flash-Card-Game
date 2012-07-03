@@ -1,17 +1,18 @@
 class Card
+  attr_reader :term, :definition
   def initialize(term, definition)
     @definition = definition
     @term = term
     @answered_correctly = false
   end
 
-  def show_def
-    @definition
-  end
-  
-  def show_term
-    @term
-  end
+  # def show_def
+  #     @definition
+  #   end
+  #
+  #   def show_term
+  #     @term
+  #   end
 
   def correct?
     @answered_correctly
