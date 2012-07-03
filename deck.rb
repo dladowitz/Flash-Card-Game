@@ -24,22 +24,22 @@ class Deck
 
   def guess(input)
     if @current_card.term == input
-      puts "Correct!"
+      puts "\033[32mCorrect!\033[0m"
       puts
       self.set_current_card
       @guess_counter = 1
-      # return 'Correct!'
+
 
     elsif @guess_counter < 3
 
-      puts "Wrong! Try again!"
+      puts "\033[31mWrong! Try again!\033[0m"
       puts
       @guess_counter += 1
 
 
 
     elsif @guess_counter < 4
-      puts "Wrong! The correct answer is: #{@current_card.term}"
+      puts "\033[31mWrong! The correct answer is: \033[0m#{@current_card.term}"
       puts
       self.set_current_card
       @guess_counter = 1

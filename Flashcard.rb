@@ -1,13 +1,16 @@
 require './deck.rb'
 require './card.rb'
 require './maker.rb'
+require './session.rb'
 
-@deck = Deck.new('dictionary.txt')
-@deck.set_current_card
 
-puts "Welcome to the Flash Card App.
-      You can play a matching game or
-      you can create a new card."
+# @deck = Deck.new('dictionary.txt')
+# @deck.set_current_card
+
+session = Session.new
+
+puts ""
+puts "\033[31mWelcome to the Flash Card App.\nYou can play a matching game or \nyou can create a new card.\033[0m\n"
 
 
 
@@ -15,63 +18,54 @@ puts "Welcome to the Flash Card App.
 # puts "tries to guess the matching term. \n"
 # puts "Currently the terms are case sensative."
 puts ""
-puts "To quit the play the game type '-play'."
-puts "To create a new card '-create'."
-puts "To quit the game type '-exit'."
+puts "\033[36mMain Menu.\033[0m"
+puts "To play the game type \033[32m-play\033[0m."
+puts "To create a new card \033[32m-create\033[0m."
+puts "To quit the game type \033[32m-exit\033[0m."
 puts ""
 
 
-puts "What do you want to do: "
-command = ''
-command = gets.chomp
+puts "\033[36mWhat do you want to do: \033[0m"
+$command = ''
+$command = gets.chomp
+puts ""
 
 
-while command != "-exit"
+while $command != "-exit"
 
-      case command
+      case $command
+
       when "-create"
-            puts "What's the term?"
-            new_term = gets.chomp
-            if new_term == '-exit'
-              command = '-exit'
-            else
-              puts "What's the definition?"
-              new_definition = gets.chomp
-              if new_definition == '-exit'
-                command = '-exit'
-                else
-                  new_card = "#{new_term}\t#{new_definition}\n"
-                  maker = Maker.new
-                  maker.add_new_card(new_card)
-                end
-              end
+        session.create
 
       when "-play"
-        # input = ""
-        # while input != '-exit'
-            puts "Definition: #{@deck.current_card.definition}"
-            print "What is the matching Term? "
-            input = gets.chomp
-
-            if input == '-exit'
-              command = '-exit'
-            else
-              @deck.guess(input)
-            end
-
-
-            # puts "What do you want to do: "
-            #             command = gets.chomp
-
-        # end
+        session.play
 
       when "-exit"
-          puts ""
-          puts "Goodbye!"
-          puts ""
-          command = "-exit"
-      end
+        puts ""
+        puts "Goodbye!"
+        puts ""
+        $command = "-exit"
 
+      when '-pre-exit'
+        puts ""
+        puts "\033[36mYou are back in the main menu.\033[0m"
+        puts "To play the game type \033[32m-play\033[0m."
+        puts "To create a new card \033[32m-create\033[0m."
+        puts "To quit the game type \033[32m-exit\033[0m."
+        puts ""
+
+        puts "\033[36mWhat do you want to do: \033[0m"
+        $command = gets.chomp
+      else
+        puts "\033[31mThat ain't no command I know!\033[0m"
+        puts "To play the game type \033[32m-play\033[0m."
+        puts "To create a new card \033[32m-create\033[0m."
+        puts "To quit the game type \033[32m-exit\033[0m."
+        puts ""
+        $command = gets.chomp
+
+      end
 end
 
 
